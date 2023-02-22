@@ -1,6 +1,7 @@
 import BlurredCircles from "../components/BlurredCircles";
 import "../styles/_home.scss";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -17,10 +18,8 @@ function Home() {
             <button className="btn-large"> I want to Received Foods</button>
           </div>
         </div>
-
+        <Footer />
         <BlurredCircles />
-
-        <div style={{ width: "100%", backgroundColor: "black" }}></div>
       </section>
     </div>
   );
