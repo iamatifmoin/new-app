@@ -1,4 +1,4 @@
-.home {
+.index {
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
@@ -20,19 +20,88 @@
       width: 50%;
       padding: 1rem;
       text-align: center;
-
-      .title {
+      
+      .foodImg{
+        width: 100%;
+        height: auto;
+      }
+      .title{
         margin-top: 2rem;
-        letter-spacing: 2px;
-        font-size: 8rem;
-        font-weight: 800;
+        font-size: 1.3rem;
       }
 
-      .btns-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-      }
-    }
+      
+  .btns-container{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+        
+  .btn-large{
+  padding: 1em 2.1em 1.1em;
+  border-radius: 3px;
+  margin: 8px 8px 8px 8px;
+  color: #fbdedb;
+  background-color: #fbdedb;
+  display: inline-block;
+  background: #e74c3c;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: .85em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  position: relative;
+}
+.btn-large:hover {
+  opacity: 0.8;
+}
+.btn-large:active {
+  opacity: 1;
+  -webkit-transform: scale(0.80);
+  -moz-transform: scale(0.80);
+  -ms-transform: scale(0.80);
+  -o-transform: scale(0.80);
+  transform: scale(0.80);
+}
+.btn-large.block {
+  display: block !important;
+}
+.btn-large.circular {
+border-radius: 50em !important;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+  .btn-large{
+    padding: .5em 1.1em 0.5em;
+    border-radius: 3px;
+    margin:2px;
+    color: #fbdedb;
+    background-color: #fbdedb;
+    display: inline-block;
+    background: #e74c3c;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: .45em;
+    text-align: center;
+  }
+  }
+
+}
+
   }
 }
