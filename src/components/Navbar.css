@@ -1,35 +1,28 @@
 nav {
   height: 5rem;
   width: 100vw;
-  background-color: #131418;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
   display: flex;
-  position: fixed;
-
+  position: sticky;
   color: white;
-  z-index: 10;
+  z-index: 99;
 }
 
-/*Styling logo*/
-.logo {
-  padding: 1vh 1vw;
-  text-align: center;
-}
-.logo img {
-  height: 5rem;
-  width: 5rem;
+.btn-one {
+  background-color: black;
+  border-radius: 10px;
+  padding: 25px;
+  color: white;
 }
 
-/*Styling Links*/
 .nav-links {
   display: flex;
-  list-style: none;
+  background-color: transparent;
   width: 88vw;
   padding: 0 0.7vw;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  color: white;
 }
 .nav-links li a {
   text-decoration: none;
