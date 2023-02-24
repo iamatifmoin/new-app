@@ -45,7 +45,7 @@ function Navbar() {
             </div>
             <Routes>
               {/* <Route index element={<Home />}></Route> */}
-              <Route exact path="about" element={<About />}></Route>
+              <Route path="about" element={<About />}></Route>
               <Route exact path="contact" element={<Contact />}></Route>
               <Route exact path="login" element={<Login />}></Route>
               <Route exact path="signup" element={<Signup />}></Route>

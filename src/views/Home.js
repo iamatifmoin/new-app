@@ -1,12 +1,13 @@
-import BlurredCircles from "../components/BlurredCircles";
+// import BlurredCircles from "../components/BlurredCircles";
 import "../styles/_home.scss";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+// import Navbar from "../components/Navbar";
+// import Footer from "../components/Footer";
+import Layout from "../components/Layout";
 
 function Home() {
   return (
     <div className="index">
-      <Navbar />
+      <Layout />
       <section className="hero">
         <div className="hero-body">
           <div className="heading">
@@ -18,8 +19,6 @@ function Home() {
             <button className="btn-large"> I want to Received Foods</button>
           </div>
         </div>
-        <Footer />
-        <BlurredCircles />
       </section>
     </div>
   );
