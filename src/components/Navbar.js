@@ -43,14 +43,6 @@ function Navbar() {
                 Join
               </Link>
             </div>
-            <Routes>
-              {/* <Route index element={<Home />}></Route> */}
-              <Route path="about" element={<About />}></Route>
-              <Route exact path="contact" element={<Contact />}></Route>
-              <Route exact path="login" element={<Login />}></Route>
-              <Route exact path="signup" element={<Signup />}></Route>
-              {/* <Route exact path="*" element={<Nopage />}></Route> */}
-            </Routes>
           </div>
         </Router>
       </nav>
