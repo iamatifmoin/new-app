@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Medium.ttf) format("truetype");
+}
+
+.index {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  background-color: transparent;
+  flex-direction: column;
+  scroll-behavior: smooth;
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+
+    .hero-body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 65%;
+      //   padding: 1rem;
+      text-align: center;
+      .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          color: black;
+          //   margin-bottom: 1em;
+          font-family: "Poppins", sans-serif;
+          letter-spacing: 2px;
+          font-size: 4.5em;
+          font-weight: 800;
+        }
+        .subtitle {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-family: "Poppins", sans-serif;
+          font-size: 1rem;
+          font-weight: 600;
+          //   position: relative;
+          //   bottom: 4em;
+          color: #444;
+          span {
+            color: black;
+          }
+        }
+      }
+      .creator-section {
+        position: relative;
+        bottom: 2em;
+        .creators {
+          font-family: "Poppins", sans-serif;
+          padding: 0;
+          margin: 0;
+        }
+        .images {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 10em;
+          .image {
+            margin-top: 2em;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 65px;
+            img {
+              position: relative;
+              bottom: 2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

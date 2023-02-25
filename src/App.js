@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./views/Home";
 import About from "./views/About";
 import Contact from "./views/Contact";
@@ -10,16 +10,14 @@ import Layout from "./components/Layout";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route index path="/" element={<Home />} />
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/signup" element={<Signup />}></Route>
-          <Route path="*" element={<Nopage />}></Route>
-        </Routes>
-      </Router>
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
+        <Route path="*" element={<Nopage />}></Route>
+      </Routes>
       <Layout />
     </div>
   );
