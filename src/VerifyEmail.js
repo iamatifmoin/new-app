@@ -1,4 +1,4 @@
-import "./verifyEmail.css";
+// import "./verifyEmail.css";
 import { useAuthValue } from "./AuthContext";
 import { useState, useEffect } from "react";
 import { auth } from "./firebase";
@@ -16,7 +16,7 @@ function VerifyEmail() {
         ?.reload()
         .then(() => {
           if (currentUser?.emailVerified) {
-            navigate("/");
+            history("/");
           }
         })
         .catch((err) => {

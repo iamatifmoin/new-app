@@ -20,9 +20,9 @@ function Navbar() {
             <Link to="/about" className="btn-one">
               About
             </Link>
-            <Link to="/contact" className="btn-one">
+            {/* <Link to="/contact" className="btn-one">
               Contact Us
-            </Link>
+            </Link> */}
           </div>
           <div className="nav-links_right">
             <Link className="login-button btn-two" to="/login">
