@@ -17,20 +17,20 @@ function Navbar() {
             <Link to="/" className="btn-one">
               Home
             </Link>
-            <Link to="/about" className="btn-one">
-              About
-            </Link>
             {/* <Link to="/contact" className="btn-one">
               Contact Us
             </Link> */}
           </div>
           <div className="nav-links_right">
-            <Link className="login-button btn-two" to="/login">
+            <Link to="/about" className="btn-two">
+              About Us
+            </Link>
+            {/* <Link className="login-button btn-two" to="/login">
               Login
             </Link>
             <Link className="join-button btn-two" to="/signup">
               Join
-            </Link>
+            </Link> */}
           </div>
         </div>
       </nav>
