@@ -7,12 +7,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCAADIvRgdVxUse-V1GPVaL1B80XfSyJxI",
-  authDomain: "daily-bread-a18d7.firebaseapp.com",
-  projectId: "daily-bread-a18d7",
-  storageBucket: "daily-bread-a18d7.appspot.com",
-  messagingSenderId: "178736096235",
-  appId: "1:178736096235:web:abc8350ccc9685ac502fae",
+  apiKey: "API_KEY",
+  authDomain: "AUTH_DOMAIN",
+  projectId: "PROJECT_ID",
+  storageBucket: "STORAGE_BUCKET",
+  messagingSenderId: "MESSAGING_SENDER_ID",
+  appId: "APP_ID",
 };
 
 // Initialize Firebase
