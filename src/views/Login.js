@@ -25,7 +25,7 @@ function Login() {
           sendEmailVerification(auth.currentUser)
             .then(() => {
               setTimeActive(true);
-              history("/verify-email");
+              history("/profile");
             })
             .catch((err) => alert(err.message));
         } else {
@@ -60,7 +60,7 @@ function Login() {
         </form>
         <p>
           Don't have and account?
-          <Link to="/register">Create one here</Link>
+          <Link to="/signup">Create one here</Link>
         </p>
       </div>
     </div>

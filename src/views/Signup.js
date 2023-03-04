@@ -34,7 +34,7 @@ const Signup = () => {
         sendEmailVerification(auth.currentUser)
           .then(() => {
             setTimeActive(true);
-            history.push("/verify-email");
+            history("/profile");
           })
           .catch((err) => alert(err.message));
       });

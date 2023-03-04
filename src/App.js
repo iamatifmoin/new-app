@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./views/Home";
-import Profile from "./Profile";
+import Profile from "./views/Profile";
 import About from "./views/About";
 import Contact from "./views/Contact";
 import Login from "./views/Login";
@@ -27,7 +27,7 @@ function App() {
       <AuthProvider value={{ currentUser, timeActive, setTimeActive }}>
         <Routes>
           <Route index path="/" element={<Home />}></Route>
-          {/* <PrivateRoute exact path="/" element={<Profile />} /> */}
+          <Route exact path="/profile" element={<Profile />} />
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/login" element={<Login />}></Route>
