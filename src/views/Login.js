@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   signInWithEmailAndPassword,
   sendEmailVerification,
@@ -8,8 +8,6 @@ import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import { useAuthValue } from "../AuthContext";
 import "../styles/_login.scss";
-
-// import "./forms.css";
 
 function Login() {
   const [email, setEmail] = useState("");
