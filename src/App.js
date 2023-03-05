@@ -16,6 +16,7 @@ import PrivateRoute from "./PrivateRoute";
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const [timeActive, setTimeActive] = useState(false);
+  const isLoggedIn = window.localStorage.getItem("isLoggedIn");
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -26,7 +27,11 @@ function App() {
     <div className="App">
       <AuthProvider value={{ currentUser, timeActive, setTimeActive }}>
         <Routes>
-          <Route index path="/" element={<Home />}></Route>
+          <Route
+            index
+            path="/"
+            element={isLoggedIn ? <Profile /> : <Home />}
+          ></Route>
           <Route exact path="/profile" element={<Profile />} />
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>

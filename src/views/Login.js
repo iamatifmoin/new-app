@@ -26,6 +26,7 @@ function Login() {
             .then(() => {
               setTimeActive(true);
               history("/profile");
+              window.localStorage.setItem("isLoggedIn", true);
             })
             .catch((err) => alert(err.message));
         } else {

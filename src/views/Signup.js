@@ -36,7 +36,8 @@ const Signup = () => {
         sendEmailVerification(auth.currentUser)
           .then(() => {
             setTimeActive(true);
-            history("/login");
+            history("/profile");
+            window.localStorage.setItem("isLoggedIn");
           })
           .catch((err) => alert(err.message));
       });
