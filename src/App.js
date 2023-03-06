@@ -11,12 +11,12 @@ import { useState, useEffect } from "react";
 import { AuthProvider } from "./AuthContext";
 import { auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";
-import PrivateRoute from "./PrivateRoute";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const [timeActive, setTimeActive] = useState(false);
-  const isLoggedIn = window.localStorage.getItem("isLoggedIn");
+  // const isLoggedIn = window.localStorage.getItem("isLoggedIn");
+  const [loggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -30,9 +30,13 @@ function App() {
           <Route
             index
             path="/"
-            element={isLoggedIn ? <Profile /> : <Home />}
+            element={<Home loggedIn={loggedIn} setLoggedIn={setLoggedIn} />}
           ></Route>
-          <Route exact path="/profile" element={<Profile />} />
+          <Route
+            exact
+            path="/profile"
+            element={<Profile loggedIn={loggedIn} setLoggedIn={setLoggedIn} />}
+          />
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/login" element={<Login />}></Route>
@@ -40,7 +44,7 @@ function App() {
           <Route path="*" element={<Nopage />}></Route>
         </Routes>
       </AuthProvider>
-      <Layout />
+      <Layout loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
     </div>
   );
 }

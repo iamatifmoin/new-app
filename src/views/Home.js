@@ -1,7 +1,10 @@
 import "../styles/_home.scss";
 import { Link } from "react-router-dom";
 
-function Home() {
+function Home(props) {
+  props.setLoggedIn(false);
+  // window.localStorage.setItem("isLoggedIn", "false");
+
   return (
     <>
       <div className="index">

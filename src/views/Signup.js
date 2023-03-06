@@ -37,7 +37,7 @@ const Signup = () => {
           .then(() => {
             setTimeActive(true);
             history("/profile");
-            window.localStorage.setItem("isLoggedIn");
+            window.localStorage.setItem("isLoggedIn", "true");
           })
           .catch((err) => alert(err.message));
       });

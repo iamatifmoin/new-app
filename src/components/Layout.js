@@ -3,10 +3,10 @@ import Navbar from "./Navbar";
 import BlurredCircles from "./BlurredCircles";
 import Footer from "./Footer";
 
-const Layout = () => {
+const Layout = (props) => {
   return (
     <>
-      <Navbar />
+      <Navbar loggedIn={props.loggedIn} setLoggedIn={props.setLoggedIn} />
       <BlurredCircles />
       <Footer />
     </>

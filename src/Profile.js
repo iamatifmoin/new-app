@@ -3,7 +3,9 @@ import { useAuthValue } from "./AuthContext";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase";
 
-function Profile() {
+function Profile(props) {
+  // window.localStorage.setItem("isLoggedIn", "true");
+  props.setLoggedIn(true);
   const { currentUser } = useAuthValue();
 
   return (
